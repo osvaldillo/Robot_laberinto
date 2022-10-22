@@ -1,5 +1,5 @@
 
-//putoto
+//putototo
 const int Echo = 5;
 const int Trigger = 6;
 
