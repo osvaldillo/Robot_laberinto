@@ -21,7 +21,8 @@ void loop() {
     walk(M1R, M2R);                                 //avanza
     if(sideWard == false){                          //Si no hay pared derecha...
       pause(M1R, M2R);                                //detente
-      turnR(M1R, M2L, radius,wheelRadius, rpm);       //gira a la derecha y empieza de nuevo
+      turnR(M1R, M2L, radius,wheelRadius, rpm);       //gira a la derecha
+      walk(M1R, M2R);                                 //avanza y vuelve a empezar
     }
   }else{                                          //Si hay un obstáculo...
     pause(M1R, M2R);                                //detente
