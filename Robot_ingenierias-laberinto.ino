@@ -1,4 +1,6 @@
+#include "Roboto.h"
 
+ 
 //putototo
 const int Echo = 5;
 const int Trigger = 6;
@@ -10,7 +12,7 @@ void setup() {
   pinMode(Trigger, OUTPUT);
   pinMode(Echo, INPUT);
   digitalWrite(Trigger, LOW);
-  
+  dely();
 
 }
 
@@ -18,7 +20,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   long t;
   long d;
-
+  
   digitalWrite(Trigger, HIGH);
   delayMicroseconds(10);
   digitalWrite(Trigger, LOW);
@@ -28,6 +30,5 @@ void loop() {
   Serial.print(d);
   Serial.println(" cm");
   delay(100);
-  
   
 }
